@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Agency theme</title>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width initial-scale=1.0'>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+body{
+ font-family:"Open Sans";
+ position:relative
+}
+.navbar,.container-fluid .jumbotron{
+background:#5f1ef4;
+color:white;
+font-size:14px;
+border-radius:0;
+}
+.container-fluid .jumbotron{
+padding:135px 10px;
+}
+button, input, textarea{
+	border-radius: 0!important
+}
+h4{
+margin:20px 0px
+}
+h3:not(#pdesc){
+font-weight:600
+}
+
+.navbar{
+letter-spacing:4px;
+border:0;
+}
+
+.navbar a{
+ color:white;
+}
+.navbar a:hover:not(.navbar-brand),.active a{
+color:#5f1ef4;
+background-color:white
+}
+
+.col-sm-8.bg1{
+padding:0px 50px;
+letter-spacing:0.5px
+}
+
+.row{
+ padding:60px 0px
+}
+
+.services .col-sm-4{
+	padding:10px
+}
+
+.glyphicon{
+color:#5f1ef4;
+}
+
+#services,#portfolio{
+padding:30px
+}
+#services .glyphicon{
+ font-size:116px
+}
+#services>div:first-of-type>div{
+	height:279px;
+}
+#services>div>div:last-child {
+	position: relative;
+	top: -23px;
+}
+#services>div>div:last-child .glyphicon{
+font-size:135px;
+}
+#services .animate{
+	padding:3em;
+}
+
+h3{
+ margin-bottom:30px;
+ font-size:3em;
+}
+
+#portfolio>div>div{
+position:relative
+}
+#portfolio .col-sm-4 div{
+width:95%;
+background:white;
+padding:0 0 5px;
+color:#545454;
+font-size: 1.1em;
+}
+#portfolio img{
+width:100%;
+}
+
+.carousel-control.right,.carousel-control.left{
+background-image:none
+}
+#mycarousel{
+padding:5.5em ;
+}
+.carousel-inner{
+font-size:1.2em;
+}
+.carousel-indicators>li{
+ border-color:#5f1ef4
+}
+.carousel-indicators>.active{
+background-color:#5f1ef4
+}
+
+#pricing{
+padding-left:2em;
+padding-right:2em;
+}
+.panel{
+border:1px solid #5f1ef4;
+border-radius:0px;
+box-shadow:initial;
+transition:box-shadow 0.5s;
+}
+.panel:hover{
+box-shadow:5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-heading{
+background-color:#5f1ef4;
+border-radius:0
+}
+.panel-title{
+font-size:2.5em;
+padding:0.6em;
+color:white;
+}
+.panel-body{
+color:rgb(129, 129, 129);
+line-height:2.3em;
+padding:1em;
+font-size:1.1em
+}
+.panel-footer{
+line-height:1em;
+color:#aaa;
+background-color:white;
+padding:1em
+}
+.panel-footer h2,#contact .col-sm-5{
+color:#545454;
+}
+.panel-footer button{
+background-color:#5f1ef4;
+color:white;
+margin:2em 0 0.8em 0;
+}
+
+#contact{
+padding:30px 0 50px;
+}
+#contact .col-sm-5 h5{
+margin:1.2em 0;
+font-size:1.3em
+}
+#contact .col-sm-5 h5:first-child{
+margin-top:0;
+}
+#contact>h3{
+margin:2em 0 0.5em 0;
+}
+
+#contact .row{
+padding:0;
+}
+footer{padding:2em}
+.animate{
+visibility:hidden;
+}
+.in_view{
+animation-name:fadein;
+animation-duration:1s;
+visibility:visible;
+}
+#about img{
+	width: 100%
+}
+#send{
+	width:100px;
+	background-color: #5f1ef4;
+	color: white
+}
+
+@media screen and (max-width:767px){
+   .col-sm-4.bg1{
+	text-align:center;
+   }
+   .icon-bar{
+    background-color:white
+   }
+
+   .btn.btn-default.btn-lg{
+    display:block;
+	width:100%
+   }
+}
+@keyframes fadein{
+0%{
+opacity:0;
+transform:translate3d(0,160px,0);
+}
+100%{
+opacity:1;
+transform:translate3d(0,0,0);
+}
+}
+</style>
+</head>
+<body data-spy='scroll' data-offset='60' data-target='.navbar'>
+<header class='navbar navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='btn navbar-toggle' data-toggle='collapse' data-target='#mynav'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+<a href='#' class='navbar-brand'>Brand Logo</a>
+</div>
+<div class='collapse navbar-collapse' id='mynav'>
+<ul class='nav navbar-nav navbar-right'>
+
+<li><a href='#services'>SERVICES</a></li>
+<li><a href='#portfolio'>PORTFOLIO</a></li>
+<li><a href='#pricing'>PRICING</a></li>
+<li><a href='#about'>ABOUT</a></li>
+<li><a href='#contact'>CONTACT</a></li>
+</ul>
+</div>
+</div>
+</header>
+<div class='container-fluid' id='top'>
+<div class='row jumbotron text-center'>
+
+<h1>Web Dev Agency</h1>
+<p>Best in class service at affordable prices</p>
+<br>
+<form class='form-inline'>
+<div class='input-group'>
+<input type='text' class='form-control input-lg' size='50' placeholder='Enter your phone number'></input>
+<div class='input-group-btn'>
+<button class='btn btn-danger btn-lg'>Get a call</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class='container'>
+<div class='row text-center' id='services'>
+
+<h3>Services Offered</h3>
+<h4>Helping from development to launching your online business</h4>
+<br><br>
+<div>
+<div class='col-sm-4 animate'><img src='img/pc.svg'><h4>Front-end development</h4></div>
+<div class='col-sm-4 animate'><img src='img/database.svg'><h4>Back-end Development</h4></div>
+<div class='col-sm-4 animate'><span class='glyphicon glyphicon-bullhorn'></span><h4>Marketing</h4></div>
+</div>
+<div>
+<div class='col-sm-4 animate'><span class='glyphicon glyphicon-header'></span><h4>Branding</h4></div>
+<div class='col-sm-4 animate'><span class='glyphicon glyphicon-search'></span><h4>SEO</h4></div>
+<div class='col-sm-4 animate'><span class='glyphicon glyphicon-eye-open'></span><h4>Graphic Design</h4></div>
+</div>
+</div>
+
+<div class='row text-center' id='portfolio'>
+<h3>Project Portfolio</h3>
+<h4>Some of our recent projects</h4><br>
+<div class='container-fluid'>
+<div class='col-sm-4 animate'><div><img class='img-responsive' src='img/food.jpg'><br><strong>Food Delivery</strong><p>Order from your favourite resturants</p></div></div>
+<div class='col-sm-4 animate'><div><img class='img-responsive' src='img/shirt.jpg'><br><strong>Trendy Tshirts</strong><p>Get ready made and customized T-Shirts</p></div></div>
+<div class='col-sm-4 animate'><div><img class='img-responsive' src='img/news.jpg'><br><strong>Positive News</strong><p>Start your morning with positive news</p></div></div>
+</div>
+<br><br><br><br><br>
+<div class='col-sm-12'>
+<h3>Testimonials</h3>
+<div id='mycarousel' class='carousel slide' data-ride='carousel'>
+<ol class='carousel-indicators'>
+<li data-target='#mycarousel' data-slide-to='0' class='active'></li>
+<li data-target='#mycarousel' data-slide-to='1'></li>
+<li data-target='#mycarousel' data-slide-to='2'></li>
+</ol>
+<div class='carousel-inner' role='listbox'>
+<div class='item active'>
+<i>"Fast and quality services. Completely satisfied"</i>
+<br>ABC, XYZ
+</div>
+<div class='item'>
+<i>"Fast and quality services. Completely satisfied"</i>
+<br>ABC, XYZ
+</div>
+<div class='item'>
+<i>"Fast and quality services. Completely satisfied"</i>
+<br>ABC, XYZ
+</div>
+</div>
+<a class='left carousel-control' href='#mycarousel' role='button' data-slide='prev'>
+<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+</a>
+<a class='right carousel-control' href='#mycarousel' role='button' data-slide='next'>
+<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+</a>
+</div>
+</div>
+</div>
+
+
+
+<div class='row text-center' id='pricing'>
+<h3>Pricing</h3>
+<h4 id='pdesc'>Value for money pricing</h4>
+<br>
+<div class='col-sm-4 animate'>
+<div class='panel '>
+<div class='panel-heading'>
+<div class='panel-title'>Regular</div>
+</div>
+<div class='panel-body'>
+<b>Lorem Ipsum</b> 
+<br>
+<b>Dolor sit</b> 
+<br>
+<b>Amet consectetur</b>
+<br>
+<b>Curabitur non</b> 
+<br>
+<b>Adipiscing elit</b>
+</div>
+<div class='panel-footer'>
+<h2>
+$200
+</h2>
+per month
+<br>
+<button class='btn btn-lg'>Sign Up</button>
+</div>
+</div>
+</div>
+
+<div class='col-sm-4 animate'>
+<div class='panel'>
+<div class='panel-heading'>
+<div class='panel-title'>Plus</div>
+</div>
+<div class='panel-body'>
+<b>Lorem Ipsum</b> 
+<br>
+<b>Dolor sit</b> 
+<br>
+<b>Amet consectetur</b>
+<br>
+<b>Curabitur non</b> 
+<br>
+<b>Adipiscing elit</b>
+</div>
+<div class='panel-footer'>
+<h2>
+$300
+</h2>
+per month
+<br>
+<button class='btn btn-lg'>Sign Up</button>
+</div>
+</div>
+</div>
+
+<div class='col-sm-4 animate'>
+<div class='panel'>
+<div class='panel-heading'>
+<div class='panel-title'>Advanced</div>
+</div>
+<div class='panel-body'>
+<b>Lorem Ipsum</b> 
+<br>
+<b>Dolor sit</b> 
+<br>
+<b>Amet consectetur</b>
+<br>
+<b>Curabitur non</b> 
+<br>
+<b>Adipiscing elit</b>
+</div>
+<div class='panel-footer'>
+<h2>
+$500
+</h2>
+per month
+<br>
+<button class='btn btn-lg'>Sign Up</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class='row about' id='about'>
+<div class='col-sm-8 bg1'>
+<h3>About Us</h3>
+<br><br>
+<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt at mi id tristique. In et nibh ultricies, commodo dolor sed, tristique turpis. Fusce faucibus, quam vel posuere pellentesque, ipsum purus hendrerit felis.<br><br><br>
+<small>Quisque bibendum, dolor vitae porta condimentum, dui tellus sollicitudin ex, at eleifend libero tortor in sapien. Duis eget lorem mattis justo porta auctor. Donec luctus elit ornare nulla eleifend, eget aliquam nulla hendrerit. Vivamus velit orci, dapibus et faucibus ac, tempus eget magna. Nulla pretium mattis tortor, aliquam tincidunt magna gravida sit amet. Donec mattis, neque at consectetur pretium, lorem risus pharetra nisi, sit amet viverra quam nulla in turpis. Mauris libero enim, aliquam non ornare vel, molestie sit amet arcu. Cras quis interdum nulla.</small></h4>
+</div>
+<div class='hidden-xs col-sm-4 bg1 animate'><img class='img-responsive' src='img/photo.svg'></div>
+</div>
+
+<div class='row about'>
+<div class='hidden-xs col-sm-4 bg1 animate'><img class='img-responsive' src='img/send.svg'></div>
+
+<div class='col-sm-8 bg1'>
+<h3>Mission</h3>
+<br><br>
+<h4>Sed ultrices venenatis mi, sit amet fermentum purus venenatis at. Curabitur non luctus ligula, in eleifend sapien. In sed iaculis eros, vitae faucibus orci. Aenean quis vestibulum lacus. Mauris libero augue, condimentum in porttitor vel, elementum sed lectus aecenas ornare porttitor justo.
+<br><br><br>
+<small>Lectus fermentum commodo. Aliquam vitae ante eget ante elementum gravida. Etiam eget purus vitae nunc efficitur fermentum id et ipsum. Vestibulum lacinia, erat sed dictum finibus, erat elit feugiat mi, vel consectetur quam erat sed orci. Aliquam rutrum, libero ac volutpat sollicitudin, ipsum sem hendrerit dolor, in tincidunt sapien elit ac ipsum. Suspendisse potenti. Nulla non pretium risus, sit amet sagittis ligula. Maecenas aliquam ipsum a commodo luctus. Aenean at bibendum urna. Fusce non augue id magna faucibus dapibus nec non lorem. </small></h4>
+</div>
+</div>
+
+<div class='row' id='contact'>
+<h3 class='text-center'>Contact Info</h3>
+<br>
+<div class='col-sm-5 text-left'>
+
+
+<h5><strong>Contact us here</strong></h5>
+
+<h5><span class='glyphicon glyphicon-map-marker'></span> New York, US</h5>
+
+<h5><span class='glyphicon glyphicon-phone'></span> +00-1234567890</h5>
+
+<h5><span class='glyphicon glyphicon-envelope'></span> name@website.com</h5>
+
+</div>
+<div class='col-sm-7 animate'>
+<form>
+<div class='row'>
+<div class='form-group col-sm-6'>
+<input type='text' placeholder='Name' class=' form-control'></div>
+<div class='form-group col-sm-6'>
+<input type='text' placeholder='Email' class=' form-control'></div>
+</div>
+<div class='form-group'>
+<textarea rows="5" placeholder='Comments' class='form-control'></textarea>
+</div>
+<div class='form-group text-right'>
+<button id='send' class='btn btn-default'>Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<footer class=' text-center'>
+<a href='#top'><span class='glyphicon glyphicon-chevron-up'></span></a>
+</footer>
+
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUXXrC3RbbrCo3Ynhv1t3fkurtBe2PBV4" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      window.location.hash = hash;
+      });
+    }
+  });
+  
+  //cache for scroll
+  w=$(window);
+  windowh=w.height();
+  //Animate elements on scroll
+  w.on('load scroll resize',check_in_view);
+  function check_in_view(){
+  window_top=w.scrollTop();
+  window_bottom=window_top+windowh;
+  $('.animate').each(function(){
+	  if(!$(this).hasClass('in_view')){
+		var top=$(this).offset().top;
+		var bottom=top+$(this).outerHeight();
+		if(top<=window_bottom&&bottom>=window_top){
+			$(this).addClass('in_view');
+		}
+	  } 
+  })
+}})
+
+//Add Google Maps
+var myCenter = new google.maps.LatLng(40.7127837,-74.00594130000002);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+</html>
